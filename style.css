@@ -1,0 +1,152 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+}
+
+.header {
+    background-color: crimson;
+    text-align: center;
+    padding: 1px;
+    color: white;
+}
+
+.header h1,
+h2 {
+    position: relative;
+}
+
+.header img {
+    position: absolute;
+    display: flex;
+    width: 75px;
+    height: 75px;
+    margin: 25px;
+    border-radius: 50%;
+}
+
+.topnav {
+    position: relative;
+    background-color: #2C64B4;
+    text-align: center;
+    overflow: hidden;
+    background-color: black;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.topnav a {
+    display: inline-block;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    align-items: center;
+}
+
+.topnav a:hover {
+    background-color: crimson;
+    transition: ease-in-out .3s;
+}
+
+.row {
+    margin-top: 10px;
+    display: flex;
+}
+
+.column1,
+.column2,
+.column3 {
+    border: 2px solid crimson;
+    float: left;
+    text-align: center;
+    padding: 20px;
+    margin: 15px;
+    background-color: crimson;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.wrapper {
+    text-align: center;
+}
+
+.button {
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: crimson;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px black;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.button:active {
+    background-color: crimson;
+    box-shadow: 0 5px black;
+    transform: translateY(4px);
+}
+
+.footer {
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 476px) {
+
+    .row {
+        margin: 10px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .container .header img {
+        position: relative;
+        display: inline;
+        width: 75px;
+        height: 75px;
+        margin: 0px;
+        margin-top: 10px;
+        border-radius: 50%;
+    }
+}
+
+@media screen and (min-width: 476px) {
+    .topnav {
+        overflow: hidden;
+        background-color: black;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .topnav a {
+        float: left;
+        padding: 14px 16px;
+        text-decoration: none;
+        color: white;
+        background-color: black;
+        align-items: center;
+    }
+}
