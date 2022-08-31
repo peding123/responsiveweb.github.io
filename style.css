@@ -93,7 +93,7 @@ h2 {
     background-color: crimson;
     border: none;
     border-radius: 15px;
-    box-shadow: 0 9px black;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
 .button:hover {
@@ -102,7 +102,7 @@ h2 {
 
 .button:active {
     background-color: crimson;
-    box-shadow: 0 5px black;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
     transform: translateY(4px);
 }
 
